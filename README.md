@@ -1,4 +1,7 @@
 # smart-bowl-IoT
+IOT course, HIT // Final Project // Semester B, 2023
+
+The YouTube video link for the presentation recording is [here](#)
 Served By: 
 
 > Sergey Juchenko 319365102  |  Vladimir Poplavski 336137468  | Viktor Rokitko 336484951
@@ -24,7 +27,5 @@ run application.py
 ## License
 This project is licensed under the MIT License.
 
-IOT course, HIT // Final Project // Semester B, 2023
 
-The YouTube video link for the presentation recording is [here](#)
 
