@@ -3,7 +3,15 @@ import time
 import tkinter as tk
 import threading
 
+BROKER = "broker.hivemq.com"
+SUB_TOPIC = "smart-bowl/weight"
+PUB_TOPIC = "smart-bowl/weight-status"
+FULL_BOWL_IMG_PATH = "img.png"
+EMPTY_BOWL_IMG_PATH = "img2.png"
 
+
+
+# callback function to process incoming MQTT messages
 def on_message(client, userdata, message):
     global amount_of_food_grams
     amount_of_food_grams = int(str(message.payload.decode("utf-8")))
@@ -17,7 +25,7 @@ def update_label():
         amount_of_food_grams = 0
         
     amount_label.config(text=str(amount_of_food_grams) + " grams")
-    client.publish("smart-bowl/weight-status", str(amount_of_food_grams))
+    client.publish(PUB_TOPIC, str(amount_of_food_grams))
 
 def update_loop():
     while True:
@@ -27,9 +35,9 @@ def update_loop():
         # changes the image from empty bowl to full and vice versa
         img = ''
         if amount_of_food_grams <= 0:
-            img = tk.PhotoImage(file="img2.png")
+            img = tk.PhotoImage(file = EMPTY_BOWL_IMG_PATH)
         else:
-            img = tk.PhotoImage(file="img.png")
+            img = tk.PhotoImage(file = FULL_BOWL_IMG_PATH)
         update_img(img)
 
 def update_img(img):
@@ -37,8 +45,8 @@ def update_img(img):
 
 # creates client 
 client = mqtt.Client()
-client.connect("broker.hivemq.com")
-client.subscribe("smart-bowl/weight")
+client.connect(BROKER)
+client.subscribe(SUB_TOPIC)
 client.on_message = on_message
 client.loop_start()
 
@@ -53,7 +61,7 @@ root.title("Smart Bowl")
 amount_label = tk.Label(root, text=str(amount_of_food_grams) + " grams", font=("Arial", 32))
 amount_label.pack(pady=20)
 
-image = tk.PhotoImage(file="img2.png")
+image = tk.PhotoImage(file=EMPTY_BOWL_IMG_PATH)
 image_label = tk.Label(root, image=image, width=300, height=300)
 image_label.pack()
 
