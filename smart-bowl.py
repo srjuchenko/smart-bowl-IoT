@@ -53,7 +53,7 @@ root.title("Smart Bowl")
 amount_label = tk.Label(root, text=str(amount_of_food_grams) + " grams", font=("Arial", 32))
 amount_label.pack(pady=20)
 
-image = tk.PhotoImage(file="img.png")
+image = tk.PhotoImage(file="img2.png")
 image_label = tk.Label(root, image=image, width=300, height=300)
 image_label.pack()
 
