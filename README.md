@@ -13,16 +13,16 @@ This project consists of three scripts that communicate with a smart bowl throug
 ## Dependencies
 The project requires the following dependencies:
 
-paho-mqtt==1.5.1
-pillow==8.1.2
-tkinter
-SQL lite
+- paho-mqtt==1.5.1
+- pillow==8.1.2
+- tkinter
+- SQL lite
 
 ## Usage
 To run script:
-run smart-bowl.py
-run RELAY.py   --> click on Connect 
-run application.py
+- run smart-bowl.py
+- run RELAY.py   --> click on Connect 
+- run application.py
 
 ## License
 This project is licensed under the MIT License.
