@@ -18,7 +18,7 @@ pillow==8.1.2
 tkinter
 SQL lite
 
-##Usage
+## Usage
 To run script:
 run smart-bowl.py
 run RELAY.py   --> click on Connect 
