@@ -71,7 +71,7 @@ amount_of_food_grams = 0
 amount_label = tk.Label(root, text="0 grams", fg="green", font=("Arial", 32, "bold"))
 amount_label.pack(pady=20)
 
-add_food_button = tk.Button(root, text="Add Food", bg="blue", fg="white", font=("Arial", 16), command=add_food)
+add_food_button = tk.Button(root, text="Add Food", bg="blue", fg="black", font=("Arial", 16), command=add_food)
 add_food_button.pack(pady=20)
 update_label()
 

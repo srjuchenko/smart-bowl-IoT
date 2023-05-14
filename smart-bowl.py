@@ -3,6 +3,7 @@ import time
 import tkinter as tk
 import threading
 
+CLIENT_ID = "smart-bowl-1"
 BROKER = "broker.hivemq.com"
 SUB_TOPIC = "smart-bowl/weight"
 PUB_TOPIC = "smart-bowl/weight-status"
@@ -44,7 +45,7 @@ def update_img(img):
     image_label.configure(image=img)
 
 # creates client 
-client = mqtt.Client()
+client = mqtt.Client(CLIENT_ID)
 client.connect(BROKER)
 client.subscribe(SUB_TOPIC)
 client.on_message = on_message

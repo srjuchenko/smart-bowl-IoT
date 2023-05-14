@@ -16,7 +16,7 @@ relay_topic = 'smart-bowl/add-food'
 global ON
 ON = False
 
-clientname = "Bowl"
+clientname = "smart-bowl-dispencer"
 
 class Mqtt_client():
     
