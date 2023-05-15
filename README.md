@@ -6,6 +6,9 @@ Served By:
 
 > Sergey Juchenko 319365102  |  Vladimir Poplavski 336137468  | Viktor Rokitko 336484951
 
+## Demo
+![image](https://github.com/srjuchenko/smart-bowl-IoT/assets/76474133/3694ac65-c58e-4620-b62d-5b7402e221c1)
+
 
 ## Description
 This project consists of three scripts that communicate with a smart bowl through an MQTT broker. The smart bowl measures the weight of the food and sends the data to a subscriber script that updates a GUI displaying the weight of the bowl. The publisher script allows the user to add food to the bowl by clicking a button on the GUI. When the button is pressed, a message is published to the broker, which is then received by the subscriber script. The scripts also log the timestamp and weight of the food added to a SQLite database.
