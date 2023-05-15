@@ -7,7 +7,8 @@ Served By:
 > Sergey Juchenko 319365102  |  Vladimir Poplavski 336137468  | Viktor Rokitko 336484951
 
 ## Demo
-![image](https://github.com/srjuchenko/smart-bowl-IoT/assets/76474133/3694ac65-c58e-4620-b62d-5b7402e221c1)
+![ezgif com-video-to-gif (1)](https://github.com/srjuchenko/smart-bowl-IoT/assets/76474133/336ba24d-6617-4eb5-9189-71c74e9ca7c2)
+
 
 
 ## Description
