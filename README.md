@@ -2,6 +2,7 @@
 IOT course, HIT // Final Project // Semester B, 2023
 
 The YouTube video link for the presentation recording is [here](https://www.youtube.com/watch?v=S5Sgx67XWTQ)
+<br/>
 Served By: 
 
 > Sergey Juchenko 319365102  |  Vladimir Poplavski 336137468  | Viktor Rokitko 336484951
